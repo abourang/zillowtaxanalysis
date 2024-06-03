@@ -19,3 +19,7 @@ data = pd.DataFrame({
 st.write("Here is a sample dataframe:")
 st.dataframe(data)
 
+    fl_garden = st.checkbox("Garden", value=True)
+    if fl_garden:
+        garden_sqm = st.slider(
+            "Garden Area in m²", value=80, min_value=10, max_value=1000
