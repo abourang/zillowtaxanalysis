@@ -43,7 +43,6 @@ with col1:
         "TRIPLEX": "Triplex",
         "VILLA": "Villa",
         "OTHER_PROPERTY": "Other Property",
-    }
 
 })
 st.write("Here is a sample dataframe:")
