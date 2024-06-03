@@ -5,7 +5,7 @@ horizontal_bar = "<hr style='margin-top: 0; margin-bottom: 0; height: 1px; \
 
 # Define the content of the Home page
 # Display a logo and a title
-st.image("streamlit/imgs/header.png")
+st.image("header.png")
 
 with st.sidebar:
     st.image("streamlit/imgs/logo.png", width=100)  #
