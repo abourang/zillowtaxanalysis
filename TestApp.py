@@ -14,13 +14,13 @@ bedroomcnt = st.slider("Number of Bedrooms", 0, 10, 3)
 roomcnt = st.slider("Total Room Count", 0, 10, 3)
 bathroomcnt = st.slider("Number of Bathrooms", 0, 6, 2)
 
-    fl_terrace = st.checkbox("Terrace", value=True)
-    if fl_terrace:
-        terrace_sqm = st.slider(
-            "Terrace Area in m²", value=20, min_value=10, max_value=100
-        )
-    else:
-        terrace_sqm = 0
+fl_terrace = st.checkbox("Terrace", value=True)
+if fl_terrace:
+    terrace_sqm = st.slider(
+        "Terrace Area in m²", value=20, min_value=10, max_value=100
+    )
+else:
+    terrace_sqm = 0
 
 numberofstories = st.selectbox("Stories",("1","2"))
 unitcnt = st.selectbox(" Number of units the structure is built into (i.e. 2 = duplex, 3 = triplex, etc...)",("1","2","3","4","5","6","7"))  
