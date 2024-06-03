@@ -15,11 +15,8 @@ st.header("Data Section")
 data = pd.DataFrame({
     'Column A': np.random.rand(100),
     'Column B': np.random.rand(100)
-})
-st.write("Here is a sample dataframe:")
-st.dataframe(data)
 
-col1, spacer, col2 = st.columns([1, 0.25, 1])
+    col1, spacer, col2 = st.columns([1, 0.25, 1])
 
 with col1:
     subproperty_type_dict = {
@@ -47,4 +44,9 @@ with col1:
         "VILLA": "Villa",
         "OTHER_PROPERTY": "Other Property",
     }
+
+})
+st.write("Here is a sample dataframe:")
+st.dataframe(data)
+
 
