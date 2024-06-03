@@ -15,10 +15,10 @@ roomcnt = st.slider("Total Room Count", 0, 10, 3)
 bathroomcnt = st.slider("Number of Bathrooms", 0, 6, 2)
 
 fl_garden = st.checkbox("Garden", value=True)
-if fl_garden:
-garden_sqm = st.slider("Garden Area in m²", value=80, min_value=10, max_value=1000)
-else:
-garden_sqm = 0
+  if fl_garden:
+    garden_sqm = st.slider("Garden Area in m²", value=80, min_value=10, max_value=1000)
+  else:
+    garden_sqm = 0
 
 numberofstories = st.selectbox("Stories",("1","2"))
 unitcnt = st.selectbox(" Number of units the structure is built into (i.e. 2 = duplex, 3 = triplex, etc...)",("1","2","3","4","5","6","7"))  
