@@ -14,7 +14,7 @@ roomcnt = st.slider("Total Room Count", 0, 10, 3)
 bathroomcnt = st.slider("Number of Bathrooms", 0, 6, 2)
 
 numberofstories = st.selectbox("Stories",("1","2"))
-unitcnt = st.selectbox(" Number of units the structure is built into (i.e. 2 = duplex, 3 = triplex, etc...",("1","2","3","4","5","6","7")  
+unitcnt = st.selectbox(" Number of units the structure is built into (i.e. 2 = duplex, 3 = triplex, etc...",("1","2","3","4","5","6","7"))  
 
                        
 if st.button("Submit"):
