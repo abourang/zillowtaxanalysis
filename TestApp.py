@@ -13,7 +13,8 @@ lotsizessquarefeet = st.number_input("Total Living Area in ft²", value=7000, mi
 bedroomcnt = st.slider("Number of Bedrooms", 0, 10, 3)
 roomcnt = st.slider("Total Room Count", 0, 10, 3)
 bathroomcnt = st.slider("Number of Bathrooms", 0, 6, 2)
-
+numberofstories = st.selectbox("Stories",("1","2"))
+unitcnt = st.selectbox(" Number of units the structure is built into (i.e. 2 = duplex, 3 = triplex, etc...)",("1","2","3","4","5","6","7"))  
 
 
 fl_garage = st.checkbox("Garage", value=True)
@@ -30,14 +31,17 @@ if fl_pool:
 else:
     poolsizesum = 0
 
+fl_patio = st.checkbox("Pool", value=True)
+if fl_patio:
+    yardbuildingsqft17 = st.slider("Patio Area in ft²", value=50, min_value=11, max_value=6407)
+else:
+    yardbuildingsqft17 = 0
+
 fl_fireplace = st.checkbox("Fireplace", value=True)
 if fl_fireplace:
     fireplacecnt = st.selectbox("Fireplace Count",("1","2"))
 else:
     fireplacecnt = 0
-
-numberofstories = st.selectbox("Stories",("1","2"))
-unitcnt = st.selectbox(" Number of units the structure is built into (i.e. 2 = duplex, 3 = triplex, etc...)",("1","2","3","4","5","6","7"))  
 
                        
 if st.button("Submit"):
