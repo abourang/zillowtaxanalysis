@@ -6,7 +6,9 @@ st.title("Streamlit App Example")
 
 st.header("Input Section")
 # name = st.text_input("Enter your name:")
-yearbuilt = st.slider("Construction Year:", 1808, 2016, 1960)
+yearbuilt = st.number_input("Construction Year", value=1965, min_value=1808, max_value=2016)
+total_area_sqm = st.number_input("Total Living Area in ft²", value=150, min_value=10, max_value=1000)
+
 bedroomcnt = st.slider("Number of Bedrooms", 1, 10, 3)
 bathroomcnt = st.slider("Number of Bathrooms", 0, 6, 2)
 
