@@ -24,9 +24,12 @@ st.markdown(
 
    **Objectives**
    
-      *To identify the key factors influencing the tax value of houses.*
-      *Develop a predictive model that can forecast the tax value of houses accurately.*
-      *Implement insights from the model to refine the assessment processes and ensure fair tax valuations.*
+      To identify the key factors influencing the tax value of houses.
+      
+      Develop a predictive model that can forecast the tax value of houses accurately.
+      
+      Implement insights from the model to refine the assessment processes and ensure fair tax valuations.
+      
 """
 )
 
