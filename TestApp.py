@@ -50,7 +50,7 @@ with col1:
     numberofstories = st.selectbox("Stories",("1","2"))  
 
 with col2:
-    unitcnt = st.selectbox(" Number of units)",("1","2","3","4","5","6","7"))
+    unitcnt = st.selectbox(" Number of units",("1","2","3","4","5","6","7"))
     fl_garage = st.checkbox("Garage", value=True)
     if fl_garage:
         garagecarcnt = st.selectbox("Number of garages on lot",("1","2","3","4","5"))
@@ -79,7 +79,7 @@ with col2:
 
                        
 if st.button("Submit"):
-    st.write(f"Hello, {name}. You are {age} years old.")
+    st.write()
 
 st.header("Data Section")
 data = pd.DataFrame({
