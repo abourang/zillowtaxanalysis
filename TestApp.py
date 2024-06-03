@@ -16,9 +16,7 @@ bathroomcnt = st.slider("Number of Bathrooms", 0, 6, 2)
 
 fl_garden = st.checkbox("Garden", value=True)
     if fl_garden:
-        garden_sqm = st.slider(
-            "Garden Area in m²", value=80, min_value=10, max_value=1000
-        )
+        garden_sqm = st.slider("Garden Area in m²", value=80, min_value=10, max_value=1000)
     else:
         garden_sqm = 0
 
