@@ -7,9 +7,6 @@ horizontal_bar = "<hr style='margin-top: 0; margin-bottom: 0; height: 1px; \
 # Display a logo and a title
 st.image("header.png")
 
-with st.sidebar:
-    st.image("streamlit/imgs/logo.png", width=100)  #
-
 # st.sidebar.image("streamlit/imgs/logo.png", use_column_width=False)
 st.title("Predicting House Value for Property Tax Assessment")
 st.text("Zillow's Market Value Estimation")
