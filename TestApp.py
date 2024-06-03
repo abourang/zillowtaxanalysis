@@ -19,7 +19,32 @@ data = pd.DataFrame({
 st.write("Here is a sample dataframe:")
 st.dataframe(data)
 
-    fl_garden = st.checkbox("Garden", value=True)
-    if fl_garden:
-        garden_sqm = st.slider(
-            "Garden Area in m²", value=80, min_value=10, max_value=1000
+col1, spacer, col2 = st.columns([1, 0.25, 1])
+
+with col1:
+    subproperty_type_dict = {
+        "APARTMENT": "Apartment",
+        "HOUSE": "House",
+        "APARTMENT_BLOCK": "Apartment Block",
+        "BUNGALOW": "Bungalow",
+        "CASTLE": "Castle",
+        "CHALET": "Chalet",
+        "COUNTRY_COTTAGE": "Country Cottage",
+        "EXEPTIONAL_PROPERTY": "Exceptional Property",
+        "DUPLEX": "Duplex",
+        "FARMHOUSE": "Farmhouse",
+        "FLAT_STUDIO": "Flat Studio",
+        "GROUND_FLOOR": "Ground Floor",
+        "LOFT": "Loft",
+        "KOT": "Kot",
+        "MANOR_HOUSE": "Manor House",
+        "MANSION": "Mansion",
+        "MIXED_USE_BUILDING": "Mixed Use Building",
+        "PENTHOUSE": "Penthouse",
+        "SERVICE_FLAT": "Service Flat",
+        "TOWN_HOUSE": "Town House",
+        "TRIPLEX": "Triplex",
+        "VILLA": "Villa",
+        "OTHER_PROPERTY": "Other Property",
+    }
+
