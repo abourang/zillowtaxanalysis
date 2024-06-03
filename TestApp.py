@@ -14,13 +14,29 @@ bedroomcnt = st.slider("Number of Bedrooms", 0, 10, 3)
 roomcnt = st.slider("Total Room Count", 0, 10, 3)
 bathroomcnt = st.slider("Number of Bathrooms", 0, 6, 2)
 
-fl_terrace = st.checkbox("Terrace", value=True)
+fl_fireplace = st.checkbox("Fireplace", value=True)
 if fl_terrace:
     terrace_sqm = st.slider(
         "Terrace Area in m²", value=20, min_value=10, max_value=100
     )
 else:
     terrace_sqm = 0
+
+
+fl_garage = st.checkbox("Garage", value=True)
+if fl_garage:
+    garagecarcnt = st.selectbox("Number of garages on lot",("1","2","3","4","5"))
+    garagetotalsqft = st.slider("Garage Area in ft²", value=100, min_value=0, max_value=1514)
+else:
+    garagecarcnt = 0
+    garagetotalsqft = 0
+
+
+fl_fireplace = st.checkbox("Fireplace", value=True)
+if fl_fireplace:
+    fireplacecnt = st.selectbox("Fireplace Count",("1","2"))
+else:
+    fireplacecnt = 0
 
 numberofstories = st.selectbox("Stories",("1","2"))
 unitcnt = st.selectbox(" Number of units the structure is built into (i.e. 2 = duplex, 3 = triplex, etc...)",("1","2","3","4","5","6","7"))  
