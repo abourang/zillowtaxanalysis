@@ -31,7 +31,7 @@ if fl_pool:
 else:
     poolsizesum = 0
 
-fl_patio = st.checkbox("Pool", value=True)
+fl_patio = st.checkbox("patio", value=True)
 if fl_patio:
     yardbuildingsqft17 = st.slider("Patio Area in ft²", value=50, min_value=11, max_value=6407)
 else:
