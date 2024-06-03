@@ -17,10 +17,10 @@ with col1:
     bedroomcnt = st.slider("Number of Bedrooms", 0, 10, 3)
     roomcnt = st.slider("Total Room Count", 0, 10, 3)
     bathroomcnt = st.slider("Number of Bathrooms", 0, 6, 2)
-    numberofstories = st.selectbox("Stories",("1","2"))
-    unitcnt = st.selectbox(" Number of units the structure is built into (i.e. 2 = duplex, 3 = triplex, etc...)",("1","2","3","4","5","6","7"))  
+    numberofstories = st.selectbox("Stories",("1","2"))  
 
 with col2:
+    unitcnt = st.selectbox(" Number of units the structure is built into (i.e. 2 = duplex, 3 = triplex, etc...)",("1","2","3","4","5","6","7"))
     fl_garage = st.checkbox("Garage", value=True)
     if fl_garage:
         garagecarcnt = st.selectbox("Number of garages on lot",("1","2","3","4","5"))
