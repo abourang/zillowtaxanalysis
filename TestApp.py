@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-st.title("Streamlit App Example")
+#st.title("Streamlit App")
 
 horizontal_bar = "<hr style='margin-top: 0; margin-bottom: 0; height: 1px; \
                         border: 1px solid #635985;'><br>"  # thin divider line
