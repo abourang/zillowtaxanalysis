@@ -6,11 +6,11 @@ st.title("Streamlit App Example")
 
 st.header("Input Section")
 # name = st.text_input("Enter your name:")
-yearbuilt = st.slider("Construction Year:", 1808, 2016, 2000)
-bedroomnum = st.slider("Number of Bedrooms", 1, 10, 3)
-bedroomnum = st.slider("Number of Bedrooms", 1, 10, 3)
+yearbuilt = st.slider("Construction Year:", 1808, 2016, 1960)
+bedroomcnt = st.slider("Number of Bedrooms", 1, 10, 3)
+bathroomcnt = st.slider("Number of Bathrooms", 0, 6, 2)
 
-locality = st.selectbox("Locality",("Aalst","Antwerp",))
+numberofstories = st.selectbox("Stories",("1","2"))
 
 if st.button("Submit"):
     st.write(f"Hello, {name}. You are {age} years old.")
