@@ -14,13 +14,6 @@ bedroomcnt = st.slider("Number of Bedrooms", 0, 10, 3)
 roomcnt = st.slider("Total Room Count", 0, 10, 3)
 bathroomcnt = st.slider("Number of Bathrooms", 0, 6, 2)
 
-fl_fireplace = st.checkbox("Fireplace", value=True)
-if fl_terrace:
-    terrace_sqm = st.slider(
-        "Terrace Area in m²", value=20, min_value=10, max_value=100
-    )
-else:
-    terrace_sqm = 0
 
 
 fl_garage = st.checkbox("Garage", value=True)
@@ -30,7 +23,12 @@ if fl_garage:
 else:
     garagecarcnt = 0
     garagetotalsqft = 0
-
+    
+fl_pool = st.checkbox("Pool", value=True)
+if fl_pool:
+    poolsizesum = st.slider("Pool Area in ft²", value=400, min_value=19, max_value=2576)
+else:
+    poolsizesum = 0
 
 fl_fireplace = st.checkbox("Fireplace", value=True)
 if fl_fireplace:
