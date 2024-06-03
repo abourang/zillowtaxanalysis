@@ -7,13 +7,16 @@ st.title("Streamlit App Example")
 st.header("Input Section")
 # name = st.text_input("Enter your name:")
 yearbuilt = st.number_input("Construction Year", value=1965, min_value=1808, max_value=2016)
-total_area_sqm = st.number_input("Total Living Area in ft²", value=150, min_value=10, max_value=1000)
-
-bedroomcnt = st.slider("Number of Bedrooms", 1, 10, 3)
+calculatedfinishedsquarefeet = st.number_input("Total Living Area in ft²", value=2000, min_value=1, max_value=183444)
+lotsizessquarefeet = st.number_input("Total Living Area in ft²", value=7000, min_value=169, max_value=14043439)
+bedroomcnt = st.slider("Number of Bedrooms", 0, 10, 3)
+roomcnt = st.slider("Total Room Count", 0, 10, 3)
 bathroomcnt = st.slider("Number of Bathrooms", 0, 6, 2)
 
 numberofstories = st.selectbox("Stories",("1","2"))
+unitcnt = st.selectbox(" Number of units the structure is built into (i.e. 2 = duplex, 3 = triplex, etc...",("1","2","3","4","5","6","7")  
 
+                       
 if st.button("Submit"):
     st.write(f"Hello, {name}. You are {age} years old.")
 
