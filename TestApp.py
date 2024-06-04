@@ -15,7 +15,7 @@ st.image("header.png")
 st.title("Predicting House Value for Property Tax Assessment")
 st.text("BUS 48 Practical Analytics: Transforming Data into Decisions")
 st.markdown(horizontal_bar, True)
-st.subheader("Zillow's Market Value Estimation")
+#st.subheader("Zillow's Market Value Estimation")
 st.markdown(
     """
     **Background**
