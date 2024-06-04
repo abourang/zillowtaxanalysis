@@ -43,7 +43,7 @@ with col1:
     regionidzip = st.number_input("Zip Code", value=95982, min_value=95982, max_value=97344)
     yearbuilt = st.number_input("Construction Year", value=1965, min_value=1808, max_value=2016)
     calculatedfinishedsquarefeet = st.number_input("Total Living Area in ft²", value=2000, min_value=1, max_value=183444)
-    lotsizessquarefeet = st.number_input("Total Living Area in ft²", value=7000, min_value=169, max_value=14043439)
+    lotsizessquarefeet = st.number_input("Total Lot Area in ft²", value=7000, min_value=169, max_value=14043439)
     bedroomcnt = st.slider("Number of Bedrooms", 0, 10, 3)
     roomcnt = st.slider("Total Room Count", 0, 10, 3)
     bathroomcnt = st.slider("Number of Bathrooms", 0, 6, 2)
