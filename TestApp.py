@@ -54,7 +54,7 @@ with col2:
     fl_garage = st.checkbox("Garage", value=True)
     if fl_garage:
         garagecarcnt = st.selectbox("Number of garages on lot",("1","2","3","4","5"))
-        garagetotalsqft = st.slider("Garage Area in ft²", value=100, min_value=0, max_value=1514)
+        garagetotalsqft = st.slider("Garage Area in ft²", value=100, min_value=19, max_value=1514)
     else:
         garagecarcnt = 0
         garagetotalsqft = 0
