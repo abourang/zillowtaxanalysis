@@ -40,8 +40,8 @@ st.header("Input Section")
 col1, spacer, col2 = st.columns([1, 0.25, 1])
 
 with col1:
-    regionidzip = st.number_input("Zip Code", value=95982, min_value=95982, max_value=97344)
-    yearbuilt = st.number_input("Construction Year", value=1965, min_value=1808, max_value=2016)
+    regionidzip = st.number_input("Zip Code (Between 95982-97344)", value=95982, min_value=95982, max_value=97344)
+    yearbuilt = st.number_input("Construction Year (Between 1965-2017)", value=1965, min_value=1808, max_value=2017)
     calculatedfinishedsquarefeet = st.number_input("Total Living Area in ft²", value=2000, min_value=1, max_value=183444)
     lotsizessquarefeet = st.number_input("Total Lot Area in ft²", value=7000, min_value=169, max_value=14043439)
     bedroomcnt = st.slider("Number of Bedrooms", 0, 10, 3)
